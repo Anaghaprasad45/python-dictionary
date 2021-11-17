@@ -1,9 +1,6 @@
 def valuesort(dic):
-    k = []
     l1 = []
-    for key in dic.keys():
-        k.append(key)
-    k = sorted(k)
+    k = sorted(list(dic.keys()))
     for i in k:
         l1.append(dic[i])
     print(l1)
