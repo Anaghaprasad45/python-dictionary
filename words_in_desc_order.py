@@ -9,18 +9,6 @@ def word_frequency(words):
     return frequency
 
 
-# l1 = []
-# l2 = []
-#
-# def main(filename):
-#     frequency = word_frequency(read_words(filename))
-#     keys = list(frequency.keys())
-#     print(keys)
-#     for val in frequency.values():
-#         l1.append(val)
-#     k = sorted(l1, reverse=True)
-#     print(k)
-
 def main(filename):
     frequency = word_frequency(read_words(filename))
     a = dict(sorted(frequency.items(), reverse=True, key=lambda x: x[1]))
